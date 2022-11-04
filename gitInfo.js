@@ -11,6 +11,9 @@
 
 //CODE HERE
 
+let gitDefinition =
+  "this is where you can save and see the progress you have made and saved in your code through multiple snapshots taken by Git";
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +21,9 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition =
+  "social media platform where you transfer all your hardwork from git to show other or share with others that you will be collaborating with";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +33,9 @@
 
 //CODE HERE
 
+let gitInitDefinition =
+  "this is what you type in order to create a new respository and tranfer everything to it";
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -35,6 +44,9 @@
 
 //CODE HERE
 
+let gitCloneDefinition =
+  "git clone is what you command when youre in need of an extra copy of an exsiting repo";
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +54,9 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition =
+  "this command will follow the tracks of where things have been and where my current project is headed";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -54,6 +69,9 @@
 
 //CODE HERE
 
+let gitAddDefinition = "adds all the new changes to the staging area";
+const gitAddCode = "git add --all";
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -64,7 +82,6 @@
 */
 
 //CODE HERE
-
 
 //////////////////PROBLEM 8////////////////////
 /*
