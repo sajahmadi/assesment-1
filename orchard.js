@@ -42,7 +42,6 @@ const pinkPrice = .55
 /*
     Using for loop, calculate the total number
     of acres picked for the entire week.
-
     Save the number to a variable called 
     `totalAcres`.
 
@@ -50,6 +49,23 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+
+function totalAcres() {
+  //list the variables given in the prompt
+const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
+const galaAcres = [5, 2, 4, 3, 6, 2, 4]
+const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
+  // store our final answer
+let sum = 0;
+for (let item of fujiAcres)
+for (let item of galaAcres)
+for (let item of pinkAcres) {
+      sum += item;
+    }
+  return sum;
+}
+//
+console.log(totalAcres());
 
 
 
@@ -68,10 +84,21 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
-
-
-
+// the sum i got in problem 1 is incorrect but im not sure how to fix it. 
+//Create an array of numbers.
+const fujiAcres = [2, 3, 3, 2, 2, 2, 1];
+const galaAcres = [5, 2, 4, 3, 6, 2, 4];
+const pinkAcres = [1, 5, 4, 2, 1, 5, 4];
+//Initialize the sum variable to accumulate the numbers.
+var sum = 0;
+//Loop through the numbers and add each number to the sum
+for (var number of arr) {
+  sum += number;
+}
+//Divide the sum of numbers by the number of numbers in the array
+average = sum / arr.length;
+//Show the result
+console.log(averageDailyAcres);
 
 // PROBLEM 3
 

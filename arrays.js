@@ -36,21 +36,33 @@ let middleNums =
   to the answers array. 
 */
 
-/ bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
+const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
 
-answers = [];
-function bigOrSmallArray(arr)
-let answers = []
-for(let i = 0; i < arr.length; i++) {
-  if (arr[i] > 100) {
-    answers.push('big');
-  } else {
-    answers.push('small');
+// answers = [];
+// function bigOrSmallArray(arr)
+// let answers = []
+// for(let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 100) {
+//     answers.push('big');
+//   } else {
+//     answers.push('small');
+//   }
+//  return answers; 
+// }
+
+// const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
+// let ans = bigOrSmallArray(1, 99, 42, 69, 102, -10, 159, 352)
+
+const answers = []
+
+for (let i=0; i<bigOrSmallArray.length; i++) {
+  if (bigOrSmallArray[i] > 100) {
+    answers.push('big')
+  } else if (bigOrSmallArray[i] <= 100) {
+    answers.push('small')
   }
- return answers; 
 }
 
-const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
-let ans = bigOrSmallArray(1, 99, 42, 69, 102, -10, 159, 352)
+console.log(answers)

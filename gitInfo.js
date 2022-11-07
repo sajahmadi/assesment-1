@@ -83,6 +83,9 @@ const gitAddCode = "git add --all";
 
 //CODE HERE
 
+let gitCommitDefinition = 'snapshot of your repo at the moment'
+let gitCommitCode = 'git commit -m "Initial commit"';
+
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -90,3 +93,5 @@ const gitAddCode = "git add --all";
 */
 
 //CODE HERE
+
+let gitPushDefinition = 'the command used to sync your local repo to a remote repo like github'
