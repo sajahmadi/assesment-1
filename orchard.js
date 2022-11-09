@@ -27,6 +27,7 @@
     in cents. 
 */
 
+
 const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
@@ -50,22 +51,17 @@ const pinkPrice = .55
 
 // CODE HERE
 
-function totalAcres() {
-  //list the variables given in the prompt
-const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
-const galaAcres = [5, 2, 4, 3, 6, 2, 4]
-const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
-  // store our final answer
-let sum = 0;
-for (let item of fujiAcres)
-for (let item of galaAcres)
-for (let item of pinkAcres) {
-      sum += item;
-    }
-  return sum;
+let totalAcres = 0;
+
+  // store our final answer which should be the total of the sum of the arrays
+for (let i=0; i<7; i++){
+   totalAcres += fujiAcres[i];
+   totalAcres =+ galaAcres[i];
+   totalAcres =+ pinkAcres[i];
 }
+
 //
-console.log(totalAcres());
+console.log(totalAcres);
 
 
 
@@ -84,20 +80,12 @@ console.log(totalAcres());
 */
 
 // CODE HERE
-// the sum i got in problem 1 is incorrect but im not sure how to fix it. 
-//Create an array of numbers.
-const fujiAcres = [2, 3, 3, 2, 2, 2, 1];
-const galaAcres = [5, 2, 4, 3, 6, 2, 4];
-const pinkAcres = [1, 5, 4, 2, 1, 5, 4];
-//Initialize the sum variable to accumulate the numbers.
-var sum = 0;
-//Loop through the numbers and add each number to the sum
-for (var number of arr) {
-  sum += number;
-}
+//total from #1 should be divided by 7 to get acres per day
+
+let averageDailyAcres = totalAcres / 7;
+
 //Divide the sum of numbers by the number of numbers in the array
 average = sum / arr.length;
-//Show the result
 console.log(averageDailyAcres);
 
 // PROBLEM 3
@@ -133,8 +121,13 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+//the loop is going to start at 174 and then will stop when acresLeft = 1
+while(acresLeft > 0) {
+  days++;
+  acresLeft -= averageDailyAcres;
+}
 
-
+console.log(days)
 
 // PROBLEM 4
 
@@ -166,7 +159,19 @@ let days = 0
 // let galaTons =
 // let pinkTons =
 
+let fujiTons = fujiAcres.slice();
+let galaTons = galaAcres.slice();
+let pinkTons = pinkAcres.slice();
 
+for(let i=0; i<7; i++){
+  fujiTons[i] *= 6.5;
+  galaTons[i]*= 6.5;
+  pinkTons[i]*= 6.5;
+}
+
+console.log(fujiTons);
+console.log(galaTons);
+console.log(pinkTons);
 
 
 
@@ -188,6 +193,20 @@ let days = 0
 */
 
 // CODE HERE 
+
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
+//get the sum of each array then they will be indivudually multiplied by 2000 bc there are 2000 lbs in 1 ton
+for (let i=0; i<7; i++){
+  fujiPounds *= fujiTons[i]*2000;
+  galaPounds *= galaTons[i]*2000;
+  pinkPounds *= pinkTons[i]*2000;
+}
+
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 
 // let fujiPounds =
 // let galaPounds =
@@ -216,9 +235,16 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+//the price of each will be multiplied by the # of lbs to get th profit in cents
+
+let fujiProfit = (fujiPounds * fujiPrice)
+let galaProfit = (galaPounds * galaPrice)
+let pinkProfit = (pinkPounds * pinkProfit)
+
+console.log(fujiProfit);
+console.log(galaProfit);
+console.log(pinkProfit);
+
 
 
 
@@ -236,3 +262,6 @@ let days = 0
 */
 
 // CODE HERE
+ //create variable that included all the variables added together
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+console.log(totalProfit);
